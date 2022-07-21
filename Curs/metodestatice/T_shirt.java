@@ -30,5 +30,5 @@ public class T_shirt {
     public String toString() {
         return "T_shirt [size=" + size + ", color=" + color + ", brandName=" + brandName + "]";
     }
-
+//
 }
