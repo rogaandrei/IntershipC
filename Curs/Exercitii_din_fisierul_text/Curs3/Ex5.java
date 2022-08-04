@@ -1,6 +1,6 @@
 package Exercitii_din_fisierul_text.Curs3;
 
-public class Suma {
+public class Ex5 {
     int a;
     int b;
     int c;
@@ -25,7 +25,7 @@ public class Suma {
     }
 
     public static void main(String[] args) {
-        Suma suma1 = new Suma();
+        Ex5 suma1 = new Ex5();
         suma1.suma(10, 20);
 
         System.out.println(" ");
