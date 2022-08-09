@@ -1,4 +1,4 @@
-package Exercitii_din_fisierul_text.Curs2;
+package Exercitii_din_fisierul_text.Curs2.Ex2;
 
 public class Ex2 {
     private int a;
