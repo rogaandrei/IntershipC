@@ -20,14 +20,16 @@ public class Complex {
         nrComplexe++;
     }
 
-    public Complex suma ( Complex c ) {
-        double sumreal ;
+    public double suma ( Complex c ) {
+        double sumreal;
         double sumimaginar;
+       double sum;
         sumreal = real + c.real;
         sumimaginar = imaginar + c.imaginar;//adunarea numerelor complexe curente +primite ca parametru
+        sum = sumreal + sumimaginar;
         System.out.println("Suma nr.reale complexe sunt: " + sumreal);
         System.out.println("Suma nr.imaginare complexe sunt: " + sumimaginar);
-        return c;
+        return sum;
     }
 
     public void afiseaza () {
