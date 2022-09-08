@@ -1,23 +1,34 @@
 package Exercitii_din_fisierul_text.Curs7.Ex3;
 
 public class ContInEuro extends ContBancar implements SumaTotala {
-    float dobanda = 0;
-double c;
+
+
+    private static final int PragMinimDobanda = 500;
+
+    private static final float DobandaFixa = (float) 0.3;
+
     public ContInEuro ( String numarCont, float suma ) {
+
         super(numarCont, suma);
+
     }
 
-    public float getDobanda (  ) {
-        if (suma > 500) {
-            c = dobanda + 0.3;
-        }else if(suma<500){
-            c=dobanda+0;
-        }
-        return (float) c;
+    public float getDobanda () {
+
+        if (super.suma > PragMinimDobanda)
+
+            return DobandaFixa;
+
+        else
+
+            return 0;
+
     }
 
-    @Override
     public float getSumaTotala () {
-        return (float) (suma*36.000);
+
+        return 36000 * super.suma;
+
     }
+
 }
