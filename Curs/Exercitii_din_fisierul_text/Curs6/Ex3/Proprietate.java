@@ -7,19 +7,23 @@ public abstract class Proprietate {
 
     protected float suprafata;
 
+    public Proprietate ( String strada, int nr, float suprafata ) {
+    }
 
-    public void Proprietate( String strada, int nr, float suprafata){
 
-        this.strada=strada;
+    public void Proprietate ( String strada, int nr, float suprafata ) {
 
-        this.nr=nr;
+        this.strada = strada;
 
-        this.suprafata=suprafata;
+        this.nr = nr;
+
+        this.suprafata = suprafata;
 
     }
-    public abstract float cost(float suprafata);
 
-    public abstract String getFluturas();
+    public abstract float cost ( float suprafata );
+
+    public abstract String getFluturas ();
 
 }
 
